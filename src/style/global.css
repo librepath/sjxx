@@ -1,0 +1,29 @@
+body,
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+#mdx-wrap p a,
+#mdx-wrap li a,
+#slugs-wrap h2 a {
+  color: sandybrown !important;
+}
+
+#slugs-wrap h3 a {
+  color: wheat !important;
+}
+
+#slugs-wrap h3 {
+  padding-left: 0.5em;
+}
+#slugs-wrap div {
+  padding-left: 1em;
+}
+
+ol,
+ul {
+  padding-inline-start: 16px;
+}
+h1 {
+  margin-top: 0.3em;
+}
