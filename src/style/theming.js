@@ -10,18 +10,4 @@ export default createTheme({
       main: "#AC98AA",
     },
   },
-  // components: {
-  //   MuiTooltip: {
-  //     styleOverrides: {
-  //       tooltip: {
-  //         backgroundColor: "red",
-  //       },
-  //     },
-  //   },
-  //   MuiSpeedDialAction: {
-  //     staticTooltipLabel:{
-  //       backgroundColor:'red',
-  //     }
-  //   },
-  // },
 });
