@@ -1,9 +1,10 @@
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import SpeedDial from "../components/SpeedDial";
 import MindMap from "../components/MindMap";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../layout";
+import Bread from "../components/Bread";
 const MdxSlug = ({ data, location }: Props) => {
   const path = location.pathname
   const win_path = window.location.pathname
@@ -11,7 +12,7 @@ const MdxSlug = ({ data, location }: Props) => {
   console.log(path, win_path);
 
 
-  let { body, rawBody, h1, h2, frontmatter } = data.mdx;
+  let { body, parent: { relativePath }, rawBody, h1, h2, frontmatter } = data.mdx;
   return (
     <Layout>
       <title>{frontmatter.title || h1.map((h) => h.value).join(" ") || ""}</title>
@@ -20,17 +21,17 @@ const MdxSlug = ({ data, location }: Props) => {
       </div>
       <SpeedDial
         index
-        path={path}
         top={!isMap}
         fix={isMap}
         anchors={isMap ? [] : h2.map((h) => h.value)}
-      />
+      >
+        <Bread pathname={path} filePath={relativePath} />
+      </SpeedDial>
     </Layout>
   );
 };
 
-interface Props {
-  location: { pathname: string };
+interface Props extends PageProps {
   data: {
     mdx: {
       slug: string;
@@ -41,6 +42,9 @@ interface Props {
       };
       h1: { value: string }[];
       h2: { value: string }[];
+      parent: {
+        relativePath: string;
+      }
     };
   };
 }
@@ -58,6 +62,11 @@ export const query = graphql`
       }
       h2: headings(depth: h2) {
         value
+      }
+      parent {
+        ... on File {
+          relativePath
+        }
       }
     }
   }

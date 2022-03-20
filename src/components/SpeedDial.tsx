@@ -1,65 +1,12 @@
 import React from "react";
-import {
-  SpeedDial,
-  SpeedDialIcon,
-  SpeedDialAction,
-  Chip,
-  Box,
-  Button,
-  Breadcrumbs,
-} from "@mui/material";
+import { SpeedDial, SpeedDialIcon, SpeedDialAction, Chip, Box, } from "@mui/material";
 import { navigate } from "gatsby";
-import {
-  Link,
-  MenuBook,
-  MoreHoriz,
-  MoreVert,
-  Publish,
-} from "@mui/icons-material";
-import { LEVELS, TYPES } from "../constants/SiteMeta";
+import { Link, MenuBook, MoreHoriz, MoreVert, Publish } from "@mui/icons-material";
 
-const BC = ({ pathname = "" }) => {
-  const btn = (children: any, paths?: string[]) =>
-    paths ? (
-      <Button
-        sx={{ minWidth: 0 }}
-        onClick={() => navigate(paths.length ? `/${paths.join("/")}/` : "/")}
-      >
-        {children}
-      </Button>
-    ) : (
-      <Button disabled sx={{ minWidth: 0 }}>
-        {children}
-      </Button>
-    );
-
-  let arr = pathname.split("/");
-  let type = arr.pop();
-  let [, lv, un, le] = arr;
-  // console.log(lv);
-
-  return (
-    <Breadcrumbs>
-      {btn(<MenuBook fontSize="small" />, [])}
-      {lv && btn(LEVELS[lv], un ? [lv] : undefined)}
-      {un && btn(`${+un || un}单元`, le ? [lv, un] : undefined)}
-      {le && btn(`${+le || le}课`, type !== "" ? [lv, un, le] : undefined)}
-      {btn(TYPES[type] || type)}
-    </Breadcrumbs>
-  );
-};
-const SpeedDialCom = ({
-  path = "",
-  anchors = [],
-  top = false,
-  index = false,
-  fix = false,
-  noBread = false,
-}) => {
+const SpeedDialCom = ({ anchors = [], top = false, index = false, fix = false, children = null as any }) => {
   return (
     <Box sx={fix ? { position: "fixed", bottom: 0, pb: 3.5 } : { py: 3.5 }}>
-      {noBread ? <br /> : <BC pathname={path} />}
-
+      {children}
       <SpeedDial
         ariaLabel="root-menu"
         // direction="left"

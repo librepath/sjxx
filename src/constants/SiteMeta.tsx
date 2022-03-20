@@ -13,3 +13,4 @@ export const TYPES = {
   orgi: "原文",
   video: "视频",
 };
+export const GITHUB_PERFIX = 'https://github.com/librepath/sjxx/edit/master/docs/'
