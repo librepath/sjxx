@@ -1,11 +1,15 @@
 import * as React from "react";
-import Layout from "../components/Layout";
 import SpeedDial from "../components/SpeedDial";
-import Slugs from "../components/Slugs";
+import Slugs from "../components/Menu";
+import Layout from "../layout";
+import { useStore } from "../store";
 
 const IndexPage = () => {
+  const [{ dark }, setStore] = useStore()
   return (
-    <Layout title="目录">
+    <Layout >
+      <button onClick={() => setStore({ dark: !dark })}>change mode</button>
+      <title>总目录</title>
       <h1>三级修学课程目录</h1>
       <Slugs />
       <SpeedDial
