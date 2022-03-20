@@ -8,7 +8,7 @@ import Bread from "../components/Bread";
 const MdxSlug = ({ data, location }: Props) => {
   const path = location.pathname
   // const win_path = window.location.pathname
-  let isMap = path.slice(-3) === "map";
+  let isMap = path.slice(-3) === "map" || path.slice(-4) === 'map/';
   // console.log(path, win_path);
 
 
