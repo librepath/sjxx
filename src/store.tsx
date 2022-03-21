@@ -2,8 +2,10 @@ import React, { createContext, PropsWithChildren, useState } from "react";
 
 
 export const storeInit = {
-  dark:true as boolean,
-  path:'',
+  path: '',
+  file: '',
+  isMap: false as boolean,
+  anchors: [] as string[],
   // dark: window?.matchMedia('(prefers-color-scheme: dark)').matches || true as boolean,
   // path: window?.location.pathname || '',
 };

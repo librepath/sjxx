@@ -16,12 +16,6 @@ const theme = createTheme({
 
 
 const ThemeProvider = ({ children }: PropsWithChildren<{ dark: boolean }>) => {
-  const [{ dark }] = useStore()
-
-
-  theme.palette.mode = dark ? 'dark' : 'light';
-
-  console.log('dark:', dark, 'theme', theme);
   return (
     <StyledEngineProvider injectFirst>
       <MuiProvider theme={theme}>{children}</MuiProvider>

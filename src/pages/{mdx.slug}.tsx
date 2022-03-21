@@ -1,33 +1,29 @@
 import { graphql, PageProps } from "gatsby";
-import React from "react";
-import SpeedDial from "../components/SpeedDial";
+import React, { useEffect } from "react";
 import MindMap from "../components/MindMap";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Layout from "../layout";
-import Bread from "../components/Bread";
-const MdxSlug = ({ data, location }: Props) => {
-  const path = location.pathname
-  // const win_path = window.location.pathname
-  let isMap = path.slice(-3) === "map" || path.slice(-4) === 'map/';
-  // console.log(path, win_path);
+import { useStore } from "../store";
+const MdxSlug = ({ data, location: { pathname: path } }: Props) => {
+  const [{ isMap }, set] = useStore()
+  useEffect(() => {
+    set({
+      path,
+      isMap: path.slice(-4).includes('map'),
+      anchors: data.mdx.h2.map(h => h.value),
+      file: data.mdx.parent.relativePath
+    })
+  }, [path])
+  // let isMap = path.slice(-4).includes('map')
 
-
-  let { body, parent: { relativePath }, rawBody, h1, h2, frontmatter } = data.mdx;
+  let { body, rawBody, h1, frontmatter } = data.mdx;
   return (
-    <Layout>
+    <div>
       <title>{frontmatter.title || h1.map((h) => h.value).join(" ") || ""}</title>
       <div id="mdx-wrap">
         {isMap ? <MindMap children={rawBody} /> : <MDXRenderer children={body} />}
       </div>
-      <SpeedDial
-        index
-        top={!isMap}
-        fix={isMap}
-        anchors={isMap ? [] : h2.map((h) => h.value)}
-      >
-        <Bread pathname={path} filePath={relativePath} />
-      </SpeedDial>
-    </Layout>
+
+    </div>
   );
 };
 

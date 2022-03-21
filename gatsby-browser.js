@@ -1,12 +1,13 @@
 import "./src/style/global.css";
 
 import React from "react";
-import { CssBaseline, Stack } from "@mui/material";
+import { CssBaseline } from "@mui/material";
 import Slugs from "./src/components/Menu";
 import Link from "./src/components/Link";
 import { MDXProvider } from "@mdx-js/react";
 import { StoreProvider } from "./src/store";
 import ThemeProvider from "./src/theme";
+import Layout from "./src/layout";
 
 const coms = {
   Slugs,
@@ -20,16 +21,9 @@ export const wrapRootElement = ({ element }) => {
       <ThemeProvider>
         <CssBaseline>
           <MDXProvider components={coms}>
-            <Stack
-              id="layout-wrap"
-              px={1}
-              textAlign="justify"
-              justifyContent="space-between"
-              minHeight="100vh"
-            >
+            <Layout>
               {element}
-              <div />
-            </Stack>
+            </Layout>
           </MDXProvider>
         </CssBaseline>
       </ThemeProvider>
