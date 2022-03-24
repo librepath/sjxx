@@ -2,6 +2,7 @@ import React from "react";
 import { SpeedDial, SpeedDialIcon, SpeedDialAction, Chip, Box, } from "@mui/material";
 import { navigate } from "gatsby";
 import { Link, MenuBook, MoreHoriz, MoreVert, Publish } from "@mui/icons-material";
+import { alpha } from '@mui/material/styles'
 
 const SpeedDialCom = ({ anchors = [], top = false, index = false, fix = false, children = null as any }) => {
   return (
@@ -11,7 +12,7 @@ const SpeedDialCom = ({ anchors = [], top = false, index = false, fix = false, c
         ariaLabel="root-menu"
         // direction="left"
         sx={{ position: "fixed", right: 16, bottom: 16 }}
-        icon={<SpeedDialIcon icon={<MoreHoriz />} openIcon={<MoreVert />} />}
+        icon={<SpeedDialIcon color="secondary" icon={<MoreHoriz />} openIcon={<MoreVert />}/>}
       >
         {index && (
           <SpeedDialAction

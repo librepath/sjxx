@@ -1,6 +1,8 @@
+import { useTheme } from "@mui/material";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Link from "./Link";
+
 
 const SlugLinks = ({ left = "", right = "", depth = [NaN, 9] }) => {
   const data: Data = useStaticQuery(query);
@@ -8,6 +10,13 @@ const SlugLinks = ({ left = "", right = "", depth = [NaN, 9] }) => {
     label: node.frontmatter.title || node.headings[0]?.value,
     slug: node.slug,
   }));
+  const theme = useTheme();
+  const deep = [
+    { tag: 'h1', color: theme.palette.primary.contrastText },
+    { tag: 'h2', color: theme.palette.primary.main },
+    { tag: 'h3', color: theme.palette.secondary.main },
+    { tag: 'div', color: theme.palette.text.primary },
+  ]
   if (!depth[0]) depth[0] = left.split("/").length + 1;
   return (
     <div id='slugs-wrap'>
@@ -21,10 +30,9 @@ const SlugLinks = ({ left = "", right = "", depth = [NaN, 9] }) => {
           (!depth[1] || depth[1] >= dep)
         )
           return React.createElement(
-            dep > 3 ? "div" : `h${dep}`,
+            `${deep[Math.min(dep - 1, 4)].tag}`,
             { key: id, id: label },
-            <Link to={`/${slug}`}>
-              {/* {`第${meta.lesson || "?"}课`}{" "} */}
+            <Link to={`/${slug}`} sx={{ color: deep[Math.min(dep - 1, 4)].color }} >
               {label}
             </Link>
           );

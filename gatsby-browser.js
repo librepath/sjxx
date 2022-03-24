@@ -1,7 +1,4 @@
-import "./src/style/global.css";
-
 import React from "react";
-import { CssBaseline } from "@mui/material";
 import Slugs from "./src/components/Menu";
 import Link from "./src/components/Link";
 import { MDXProvider } from "@mdx-js/react";
@@ -19,13 +16,9 @@ export const wrapRootElement = ({ element }) => {
   return (
     <StoreProvider>
       <ThemeProvider>
-        <CssBaseline>
-          <MDXProvider components={coms}>
-            <Layout>
-              {element}
-            </Layout>
-          </MDXProvider>
-        </CssBaseline>
+        <MDXProvider components={coms}>
+          <Layout>{element}</Layout>
+        </MDXProvider>
       </ThemeProvider>
     </StoreProvider>
   );

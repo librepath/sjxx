@@ -1,11 +1,11 @@
-import { GitHub, MenuBook } from '@mui/icons-material';
-import { Breadcrumbs, Button, IconButton } from '@mui/material';
+import { MenuBook } from '@mui/icons-material';
+import { Breadcrumbs, Button } from '@mui/material';
 import { navigate } from 'gatsby';
 import React from 'react'
-import { GITHUB_PERFIX, LEVELS, TYPES } from '../constants/SiteMeta';
+import { LEVELS, TYPES } from '../constants/SiteMeta';
 
 
-const Bread = ({ pathname = "", filePath = '' }) => {
+const Bread = ({ pathname = "" }) => {
   const btn = (children: any, paths?: string[]) =>
     paths ? (
       <Button
@@ -32,9 +32,6 @@ const Bread = ({ pathname = "", filePath = '' }) => {
       {un && btn(`${+un || un}单元`, le ? [lv, un] : undefined)}
       {le && btn(`${+le || le}课`, type !== "" ? [lv, un, le] : undefined)}
       {btn(TYPES[type] || type)}
-      <IconButton component='a' href={`${GITHUB_PERFIX}${filePath}`} target='_blank'>
-        <GitHub fontSize="small" color="secondary" />
-      </IconButton>
     </Breadcrumbs>
   );
 };

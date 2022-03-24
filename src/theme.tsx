@@ -1,25 +1,105 @@
-import React, { PropsWithChildren, useEffect } from 'react'
+import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react'
 import { createTheme, StyledEngineProvider, ThemeProvider as MuiProvider } from "@mui/material/styles";
+import { Box, CssBaseline } from '@mui/material';
 import { useStore } from './store';
-
-const theme = createTheme({
+export const theme = {
   palette: {
-    mode: "dark",
     primary: {
-      main: "#ccc",
+      main: '#ffb74d',
     },
     secondary: {
-      main: "#AC98AA",
+      main: '#fff176',
     },
   },
+  typography: {
+    h1: { counterReset: 'p' },
+    body1: {
+      lineHeight: '1.6rem',
+      letterSpacing: '0.05rem',
+      textAlign: 'justify',
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '#mdx-wrap': {
+          h1: { counterReset: 'p' },
+          'p::before': {
+            counterIncrement: 'p',
+            paddingRight: '4px',
+            color: 'red',
+          }
+        }
+      }
+    }
+  }
+}
+export const setTheme = (dark = true, mark = false) => createTheme({
+  palette: {
+    mode: dark ? "dark" : "light",
+    primary: {
+      main: dark ? '#ffb74d' : '#bf360c',
+    },
+    secondary: {
+      main: dark ? '#fff176' : '#f9a825',
+    },
+  },
+  typography: {
+    h1: { counterReset: 'p' },
+    body1: {
+      lineHeight: '1.6rem',
+      letterSpacing: '0.05rem',
+      textAlign: 'justify',
+    },
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        '#mdx-wrap': {
+          h1: { counterReset: 'p' },
+          'p::before': {
+            counterIncrement: 'p',
+            content: mark ? 'counter(p)' : '""',
+            paddingRight: '4px',
+            color: 'red',
+          }
+        }
+      }
+    }
+  }
 });
 
+// export const GlobalStyles = () => <Box sx={theme => ({
+//   '@global': {
+//     '*': { m: 0, p: 0, boxSizing: 'border-box' },
+//     'body::-webkit-scrollbar': { display: 'none' },
+//     html: { width: 1, height: 1, msTextSizeAdjust: 1, WebkitOverflowScrolling: 'touch' },
+//     body: { width: 1, height: 1 },
+//   }
+// })
+// } />
 
-const ThemeProvider = ({ children }: PropsWithChildren<{ dark: boolean }>) => {
+const ThemeProvider = ({ children }: PropsWithChildren<{}>) => {
+  const [{ showId, dark }] = useStore()
+  // const [th, setTh] = useState(theme)
+  const theme = useMemo(() => setTheme(dark, showId), [dark, showId])
+  // useEffect(() => {
+  //   setTh(th => {
+  //     th.components.MuiCssBaseline.styleOverrides['#mdx-wrap']['p::before'].content = showId ? 'counter(p)' : undefined
+  //     th.palette.mode = dark ? 'dark' : 'light';
+  //     console.log('showId', showId);
+  //     console.log('dark', dark)
+  //     console.log(th)
+  //     return th
+  //   })
+  // }, [showId, dark])
   return (
-    <StyledEngineProvider injectFirst>
-      <MuiProvider theme={theme}>{children}</MuiProvider>
-    </StyledEngineProvider>
+    // <StyledEngineProvider injectFirst>
+    <MuiProvider theme={theme}>
+      <CssBaseline />
+      {children}
+    </MuiProvider>
+    // </StyledEngineProvider>
   )
 }
 

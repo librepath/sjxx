@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import MindMap from "../components/MindMap";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { useStore } from "../store";
+// import { GlobalStyles } from "../theme";
 const MdxSlug = ({ data, location: { pathname: path } }: Props) => {
   const [{ isMap }, set] = useStore()
   useEffect(() => {

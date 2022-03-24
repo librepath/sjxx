@@ -17,9 +17,9 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md", ".MDX", ".MD"],
-        defaultLayouts: {
-          default: require.resolve("./src/layout.tsx"),
-        },
+        // defaultLayouts: {
+        //   default: require.resolve("./src/layout.tsx"),
+        // },
       },
     },
     "gatsby-plugin-material-ui",
