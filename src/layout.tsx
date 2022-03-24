@@ -1,13 +1,16 @@
-import { Checkbox, Stack } from '@mui/material'
+import { Stack } from '@mui/material'
 import React, { PropsWithChildren } from 'react'
 import Bread from './components/Bread'
+import DarkSwitch from './components/DarkSwitch'
+import FontSizeSlider from './components/FontSizeSlider'
 import GitbubButton from './components/GitbubButton'
+import MarkSwitch from './components/MarkSwitch'
 import SpeedDial from './components/SpeedDial'
 import { useStore } from './store'
 
 const Layout = ({ children }: PropsWithChildren<{}>) => {
 
-  const [{ path, file, isMap, anchors, showId, dark }, set] = useStore()
+  const [{ path, file, isMap, anchors, mark, dark, zoom }, set] = useStore()
   return (
     <Stack
       id="layout-wrap"
@@ -16,6 +19,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
+
       {children}
       <SpeedDial
         index={path !== '/'}
@@ -23,12 +27,13 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         fix={isMap}
         anchors={isMap ? [] : anchors}
       >
-        <Stack direction='row' spacing={2}>
-          <GitbubButton file={file} />
-          <Checkbox color='secondary' checked={showId} onChange={v => set({ showId: !showId })} />
-          <Checkbox color='secondary' checked={dark} onChange={v => set({ dark: !dark })} />
-        </Stack>
         {path !== '/' && <Bread pathname={path} />}
+        <Stack direction='row' spacing={1}>
+          <GitbubButton file={file} />
+          <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
+          <DarkSwitch dark={dark} setDark={dark => set({ dark })} />
+          <FontSizeSlider onZoomIn={() => set({ zoom: zoom + 1 })} onZoomOut={() => set({ zoom: zoom - 1 })} />
+        </Stack>
       </SpeedDial>
       <div />
     </Stack>

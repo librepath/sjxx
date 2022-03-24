@@ -6,8 +6,9 @@ export const storeInit = {
   file: '',
   isMap: false as boolean,
   anchors: [] as string[],
-  showId: false as boolean,
-  dark: true,
+  mark: false as boolean,
+  dark: undefined as boolean,
+  zoom: 14,
   // dark: window?.matchMedia('(prefers-color-scheme: dark)').matches || true as boolean,
   // path: window?.location.pathname || '',
 };

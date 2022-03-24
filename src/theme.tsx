@@ -1,40 +1,40 @@
-import React, { PropsWithChildren, useEffect, useMemo, useState } from 'react'
+import React, { PropsWithChildren, useMemo } from 'react'
 import { createTheme, StyledEngineProvider, ThemeProvider as MuiProvider } from "@mui/material/styles";
 import { Box, CssBaseline } from '@mui/material';
 import { useStore } from './store';
-export const theme = {
-  palette: {
-    primary: {
-      main: '#ffb74d',
-    },
-    secondary: {
-      main: '#fff176',
-    },
-  },
-  typography: {
-    h1: { counterReset: 'p' },
-    body1: {
-      lineHeight: '1.6rem',
-      letterSpacing: '0.05rem',
-      textAlign: 'justify',
-    },
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        '#mdx-wrap': {
-          h1: { counterReset: 'p' },
-          'p::before': {
-            counterIncrement: 'p',
-            paddingRight: '4px',
-            color: 'red',
-          }
-        }
-      }
-    }
-  }
-}
-export const setTheme = (dark = true, mark = false) => createTheme({
+// export const theme = {
+//   palette: {
+//     primary: {
+//       main: '#ffb74d',
+//     },
+//     secondary: {
+//       main: '#fff176',
+//     },
+//   },
+//   typography: {
+//     h1: { counterReset: 'p' },
+//     body1: {
+//       lineHeight: '1.6rem',
+//       letterSpacing: '0.05rem',
+//       textAlign: 'justify',
+//     },
+//   },
+//   components: {
+//     MuiCssBaseline: {
+//       styleOverrides: {
+//         '#mdx-wrap': {
+//           h1: { counterReset: 'p' },
+//           'p::before': {
+//             counterIncrement: 'p',
+//             paddingRight: '4px',
+//             color: 'red',
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
   palette: {
     mode: dark ? "dark" : "light",
     primary: {
@@ -51,6 +51,7 @@ export const setTheme = (dark = true, mark = false) => createTheme({
       letterSpacing: '0.05rem',
       textAlign: 'justify',
     },
+    fontSize: font,
   },
   components: {
     MuiCssBaseline: {
@@ -80,9 +81,9 @@ export const setTheme = (dark = true, mark = false) => createTheme({
 // } />
 
 const ThemeProvider = ({ children }: PropsWithChildren<{}>) => {
-  const [{ showId, dark }] = useStore()
+  const [{ mark, dark, zoom }] = useStore()
   // const [th, setTh] = useState(theme)
-  const theme = useMemo(() => setTheme(dark, showId), [dark, showId])
+  const theme = useMemo(() => setTheme(dark === undefined ? window?.matchMedia('(prefers-color-scheme: dark)').matches : dark, mark, zoom), [dark, mark, zoom])
   // useEffect(() => {
   //   setTh(th => {
   //     th.components.MuiCssBaseline.styleOverrides['#mdx-wrap']['p::before'].content = showId ? 'counter(p)' : undefined
