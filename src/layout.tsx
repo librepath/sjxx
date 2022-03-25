@@ -23,13 +23,13 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
 
       {children}
       <SideDrawer >
-        {path !== '/' && <Bread pathname={path} />}
         <Stack direction='row' spacing={1}>
           <GitbubButton file={file} />
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
           <DarkSwitch dark={dark} setDark={dark => set({ dark })} />
           <FontSizeSlider onZoomIn={() => set({ zoom: zoom + 1 })} onZoomOut={() => set({ zoom: zoom - 1 })} />
         </Stack>
+        <Bread pathname={path} />
         <List>
           {anchors.map((anchor, id) => <ListItemButton key={id} onClick={() => navigate("#" + anchor, { replace: true })}>
             <ListItemText >{anchor}</ListItemText>

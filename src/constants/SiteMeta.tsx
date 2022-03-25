@@ -6,7 +6,7 @@ export const LEVELS = {
   "2-3": "同修3段",
 };
 export const TYPES = {
-  "": "辅材",
+  // "": "辅材",
   text: "课文",
   map: "导图",
   note: "笔记",

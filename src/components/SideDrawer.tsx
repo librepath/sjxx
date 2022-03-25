@@ -1,5 +1,5 @@
-import { NavigateBefore } from '@mui/icons-material'
-import { Box, Drawer, IconButton, Stack, StackProps } from '@mui/material'
+import { Close, NavigateBefore } from '@mui/icons-material'
+import { Box, Button, Drawer, IconButton, Stack, StackProps, Typography } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
 
@@ -9,9 +9,9 @@ const SideDrawer = (props: StackProps) => {
     <>
       <Box position='fixed' right={20} top='50%'>
         <IconButton sx={{
-          backdropFilter: 'blur(1px)',
+          backdropFilter: 'blur(.5px)',
           // "::MsBackdrop": 'blur(1px)',
-          backgroundColor: '#8884'
+          backgroundColor: '#8883',
         }}
           onClick={() => setOpen(true)}
         ><Box width={30} height={30}> </Box>
@@ -21,9 +21,14 @@ const SideDrawer = (props: StackProps) => {
       <Drawer
         open={open}
         onClose={() => setOpen(false)}
-        anchor='right' PaperProps={{ sx: { width: 320 } }}>
-        <Box p={1}>三级修学课程辅助</Box>
-        <Stack spacing={2} {...props} />
+        anchor='right' PaperProps={{ sx: { width: 290 } }}>
+        <Stack height={1} justifyContent='space-between'>
+          <div>
+            <Typography color='gray' fontSize={32} pt={3} px={1}>三级修学课程辅助</Typography>
+            <Stack spacing={2} {...props} />
+          </div>
+          <Button startIcon={<Close />} onClick={() => setOpen(false)}>Close</Button>
+        </Stack>
       </Drawer>
     </>
   )

@@ -20,9 +20,8 @@ const Bread = ({ pathname = "" }) => {
       </Button>
     );
 
-  let arr = pathname.split("/");
-  let type = arr.pop();
-  let [, lv, un, le] = arr;
+  let arr = pathname.split("/").filter(v => !!v);
+  let [lv, un, le, type] = arr;
   // console.log(lv);
 
   return (
@@ -31,7 +30,7 @@ const Bread = ({ pathname = "" }) => {
       {lv && btn(LEVELS[lv], un ? [lv] : undefined)}
       {un && btn(`${+un || un}单元`, le ? [lv, un] : undefined)}
       {le && btn(`${+le || le}课`, type !== "" ? [lv, un, le] : undefined)}
-      {btn(TYPES[type] || type)}
+      {type && btn(TYPES[type] || type)}
     </Breadcrumbs>
   );
 };
