@@ -1,4 +1,4 @@
-import { ForkLeft, JoinLeft, Menu, MenuOpen, SwipeLeft } from '@mui/icons-material'
+import { NavigateBefore } from '@mui/icons-material'
 import { Box, Drawer, IconButton, Stack, StackProps } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
@@ -7,15 +7,15 @@ const SideDrawer = (props: StackProps) => {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <Box position='fixed' right={20} bottom='25%'>
+      <Box position='fixed' right={20} top='50%'>
         <IconButton sx={{
           backdropFilter: 'blur(1px)',
           // "::MsBackdrop": 'blur(1px)',
-          backgroundColor: '#ccc3'
+          backgroundColor: '#8884'
         }}
           onClick={() => setOpen(true)}
-        >
-          <MenuOpen color='primary' sx={{ opacity: '.66' }} />
+        ><Box width={30} height={30}> </Box>
+          {/* <NavigateBefore color='disabled' sx={{ opacity: '.66' }} /> */}
         </IconButton>
       </Box>
       <Drawer
