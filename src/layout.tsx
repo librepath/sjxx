@@ -23,7 +23,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
 
       {children}
       <SideDrawer >
-        <Stack direction='row' spacing={1}>
+        <Stack direction='row' spacing={1} justifyContent='end' pr={2}>
           <GitbubButton file={file} />
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
           <DarkSwitch dark={dark} setDark={dark => set({ dark })} />

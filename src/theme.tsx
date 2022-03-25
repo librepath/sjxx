@@ -2,38 +2,7 @@ import React, { PropsWithChildren, useMemo } from 'react'
 import { createTheme, StyledEngineProvider, ThemeProvider as MuiProvider } from "@mui/material/styles";
 import { Box, CssBaseline } from '@mui/material';
 import { useStore } from './store';
-// export const theme = {
-//   palette: {
-//     primary: {
-//       main: '#ffb74d',
-//     },
-//     secondary: {
-//       main: '#fff176',
-//     },
-//   },
-//   typography: {
-//     h1: { counterReset: 'p' },
-//     body1: {
-//       lineHeight: '1.6rem',
-//       letterSpacing: '0.05rem',
-//       textAlign: 'justify',
-//     },
-//   },
-//   components: {
-//     MuiCssBaseline: {
-//       styleOverrides: {
-//         '#mdx-wrap': {
-//           h1: { counterReset: 'p' },
-//           'p::before': {
-//             counterIncrement: 'p',
-//             paddingRight: '4px',
-//             color: 'red',
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+
 export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
   palette: {
     mode: dark ? "dark" : "light",
@@ -45,10 +14,12 @@ export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
     },
   },
   typography: {
-    h1: { counterReset: 'p' },
+    h1: {
+      counterReset: 'p',
+    },
     body1: {
-      lineHeight: '1.6rem',
-      letterSpacing: '0.05rem',
+      lineHeight: 1.6,
+      letterSpacing: .05,
       textAlign: 'justify',
     },
     fontSize: font,
@@ -61,7 +32,7 @@ export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
           'p::before': {
             counterIncrement: 'p',
             content: mark ? 'counter(p)' : '""',
-            paddingRight: '4px',
+            paddingRight: 16,
             color: 'red',
           }
         }
@@ -70,15 +41,6 @@ export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
   }
 });
 
-// export const GlobalStyles = () => <Box sx={theme => ({
-//   '@global': {
-//     '*': { m: 0, p: 0, boxSizing: 'border-box' },
-//     'body::-webkit-scrollbar': { display: 'none' },
-//     html: { width: 1, height: 1, msTextSizeAdjust: 1, WebkitOverflowScrolling: 'touch' },
-//     body: { width: 1, height: 1 },
-//   }
-// })
-// } />
 
 const ThemeProvider = ({ children }: PropsWithChildren<{}>) => {
   const [{ mark, dark, zoom }] = useStore()
