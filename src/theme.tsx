@@ -19,7 +19,7 @@ export const setTheme = (dark = true, mark = false, font = 18) => createTheme({
     },
     body1: {
       lineHeight: 1.6,
-      letterSpacing: '0.2rem',
+      letterSpacing: '0.125rem',
       textAlign: 'justify',
     },
     fontSize: font,

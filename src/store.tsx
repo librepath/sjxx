@@ -8,7 +8,7 @@ export const storeInit = {
   anchors: [] as string[],
   mark: false as boolean,
   dark: undefined as boolean,
-  zoom: 22,
+  zoom: 16,
   // dark: window?.matchMedia('(prefers-color-scheme: dark)').matches || true as boolean,
   // path: window?.location.pathname || '',
 };
