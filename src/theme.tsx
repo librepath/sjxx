@@ -3,7 +3,7 @@ import { createTheme, StyledEngineProvider, ThemeProvider as MuiProvider } from 
 import { Box, CssBaseline } from '@mui/material';
 import { useStore } from './store';
 
-export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
+export const setTheme = (dark = true, mark = false, font = 18) => createTheme({
   palette: {
     mode: dark ? "dark" : "light",
     primary: {
@@ -19,7 +19,7 @@ export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
     },
     body1: {
       lineHeight: 1.6,
-      letterSpacing: .05,
+      letterSpacing: '0.2rem',
       textAlign: 'justify',
     },
     fontSize: font,
@@ -27,13 +27,19 @@ export const setTheme = (dark = true, mark = false, font = 14) => createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
+        body: {
+          fontFamily: `'宋体-简', '宋体', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
+        },
+        'body::-webkit-scrollbar': {
+          display: 'none'
+        },
         '#mdx-wrap': {
           h1: { counterReset: 'p' },
           'p::before': {
             counterIncrement: 'p',
             content: mark ? 'counter(p)' : '""',
             paddingRight: 16,
-            color: 'red',
+            color: 'orangered',
           }
         }
       }

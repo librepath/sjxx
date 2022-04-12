@@ -7,7 +7,7 @@ const SideDrawer = (props: StackProps) => {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <Box position='fixed' right={20} top='50%'>
+      <Box position='fixed' right={20} bottom={20}>
         <IconButton sx={{
           backdropFilter: 'blur(.5px)',
           // "::MsBackdrop": 'blur(1px)',
@@ -24,7 +24,7 @@ const SideDrawer = (props: StackProps) => {
         anchor='right' PaperProps={{ sx: { width: 290 } }}>
         <Stack height={1} justifyContent='space-between'>
           <div>
-            <Typography color='gray' fontSize={32} pt={3} px={1}>三级修学课程辅助</Typography>
+            <Typography color='gray' fontSize={32} pt={3} px={1}>非洲静心</Typography>
             <Stack spacing={2} {...props} />
           </div>
           <Button startIcon={<Close />} onClick={() => setOpen(false)}>Close</Button>
