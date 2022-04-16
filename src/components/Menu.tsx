@@ -19,7 +19,7 @@ const SlugLinks = ({ left = "", right = "", depth = [NaN, 9] }) => {
   ]
   if (!depth[0]) depth[0] = left.split("/").length + 1;
   return (
-    <div id='slugs-wrap'>
+    <div id='menu-wrap'>
       {slugs.map(({ label, slug }, id) => {
         let arr = slug.split("/");
         let dep = arr.length;

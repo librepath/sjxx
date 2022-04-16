@@ -53,7 +53,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         anchors={isMap ? [] : anchors}
       >
       </SpeedDial> */}
-      <Stack py={2.5} direction='row' mt='auto'>
+      <Stack py={2.5} direction='row' mt='auto' mb={0}>
         <GithubButton file={file} />
         <IconButton onClick={() => console.log(navigate(-1))} sx={{ ml: 3 }}>
           <ArrowCircleLeft color='primary' sx={{ opacity: 0.6 }} />
