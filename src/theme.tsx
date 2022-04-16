@@ -12,6 +12,9 @@ export const setTheme = (dark = true, mark = false, font = 18) => createTheme({
     secondary: {
       main: dark ? '#fff176' : '#f9a825',
     },
+    background: {
+      // default: dark ? '#000' : '#eee'
+    }
   },
   typography: {
     h1: {
@@ -30,9 +33,13 @@ export const setTheme = (dark = true, mark = false, font = 18) => createTheme({
         body: {
           fontFamily: `'宋体-简', '宋体', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
         },
-        'body::-webkit-scrollbar': {
-          display: 'none'
+        'body::-webkit-scrollbar, div::-webkit-scrollbar': {
+          width: '4px',
         },
+        'body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb': {
+          backgroundColor: dark ? '#555' : '#bbb'
+        },
+
         '#mdx-wrap': {
           h1: { counterReset: 'p' },
           'p::before': {
@@ -44,6 +51,7 @@ export const setTheme = (dark = true, mark = false, font = 18) => createTheme({
         }
       }
     }
+
   }
 });
 

@@ -1,16 +1,16 @@
 import { MenuBook } from '@mui/icons-material';
 import { Breadcrumbs, Button } from '@mui/material';
-import { navigate } from 'gatsby';
+// import { navigate } from 'gatsby';
 import React from 'react'
 import { LEVELS, TYPES } from '../constants/SiteMeta';
 
 
-const Bread = ({ pathname = "" }) => {
+const Bread = ({ pathname = "", onClick = (pick: string) => { } }) => {
   const btn = (children: any, paths?: string[]) =>
     paths ? (
       <Button
         sx={{ minWidth: 0 }}
-        onClick={() => navigate(paths.length ? `/${paths.join("/")}/` : "/")}
+        onClick={() => onClick(paths.length ? `/${paths.join("/")}/` : "/")}
       >
         {children}
       </Button>

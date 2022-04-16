@@ -1,17 +1,19 @@
-import { List, ListItemButton, ListItemText, Stack } from '@mui/material'
+import { ArrowCircleLeft, ArrowCircleUp, NavigateBefore, NavigateBeforeOutlined } from '@mui/icons-material'
+import { IconButton, List, ListItemButton, ListItemText, Stack } from '@mui/material'
 import { navigate } from 'gatsby'
-import React, { PropsWithChildren } from 'react'
+import React, { PropsWithChildren, useEffect, useState } from 'react'
 import Bread from './components/Bread'
 import DarkSwitch from './components/DarkSwitch'
 import FontSizeSlider from './components/FontSizeSlider'
-import GitbubButton from './components/GitbubButton'
+import GithubButton from './components/GithubButton'
 import MarkSwitch from './components/MarkSwitch'
 import SideDrawer from './components/SideDrawer'
 import { useStore } from './store'
 
 const Layout = ({ children }: PropsWithChildren<{}>) => {
-
+  const [open, setOpen] = useState(false)
   const [{ path, file, isMap, anchors, mark, dark, zoom }, set] = useStore()
+  // useEffect(() => { setOpen(false) }, [path])
   return (
     <Stack
       id="layout-wrap"
@@ -22,19 +24,27 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
     >
 
       {children}
-      <SideDrawer >
+      <SideDrawer open={open} setOpen={setOpen} >
         <Stack direction='row' spacing={1} justifyContent='end' pr={2}>
-          <GitbubButton file={file} />
+
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
           <DarkSwitch dark={dark} setDark={dark => set({ dark })} />
           <FontSizeSlider onZoomIn={() => set({ zoom: zoom + 1 })} onZoomOut={() => set({ zoom: zoom - 1 })} />
         </Stack>
-        <Bread pathname={path} />
-        <List>
+        <Bread pathname={path} onClick={(pick) => {
+          navigate(pick);
+          setOpen(false);
+        }} />
+        {!isMap && <List>
           {anchors.map((anchor, id) => <ListItemButton key={id} onClick={() => navigate("#" + anchor, { replace: true })}>
-            <ListItemText >{anchor}</ListItemText>
+            <ListItemText
+              primaryTypographyProps={{ sx: { letterSpacing: 0 } }}
+              onClick={() => setOpen(false)}
+            >{anchor}</ListItemText>
           </ListItemButton>)}
         </List>
+        }
+
       </SideDrawer>
       {/* <SpeedDial
         index={path !== '/'}
@@ -43,8 +53,18 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         anchors={isMap ? [] : anchors}
       >
       </SpeedDial> */}
+      <Stack py={2.5} direction='row' mt='auto'>
+        <GithubButton file={file} />
+        <IconButton onClick={() => console.log(navigate(-1))} sx={{ ml: 3 }}>
+          <ArrowCircleLeft color='primary' sx={{ opacity: 0.6 }} />
+        </IconButton>
+        {!isMap && <IconButton onClick={() => { window["scrollTo"]({ top: 0, behavior: "smooth" }) }} sx={{ ml: 1 }}>
+          <ArrowCircleUp color='secondary' sx={{ opacity: 0.6 }} />
+        </IconButton>
+        }
+      </Stack>
       <div />
-    </Stack>
+    </Stack >
   )
 }
 

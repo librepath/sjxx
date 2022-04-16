@@ -1,10 +1,8 @@
-import { Close, NavigateBefore } from '@mui/icons-material'
+import { Close } from '@mui/icons-material'
 import { Box, Button, Drawer, IconButton, Stack, StackProps, Typography } from '@mui/material'
 import React from 'react'
-import { useState } from 'react'
 
-const SideDrawer = (props: StackProps) => {
-  const [open, setOpen] = useState(false)
+const SideDrawer = ({ open, setOpen, ...props }: StackProps & { open: boolean, setOpen: (open: boolean) => void }) => {
   return (
     <>
       <Box position='fixed' right={20} bottom={20}>

@@ -3,7 +3,7 @@ import { IconButton } from '@mui/material'
 import React from 'react'
 import { GITHUB_PERFIX } from '../constants/SiteMeta';
 
-const GitbubButton = ({ file = '' }) => {
+const GithubButton = ({ file = '' }) => {
   return (
     <IconButton component='a' href={`${GITHUB_PERFIX}${file}`} target='_blank'>
       <GitHub fontSize="small" color="disabled" />
@@ -11,4 +11,4 @@ const GitbubButton = ({ file = '' }) => {
   )
 }
 
-export default GitbubButton
+export default GithubButton
