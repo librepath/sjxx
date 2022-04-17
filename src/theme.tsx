@@ -27,8 +27,6 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
       },
       body1: {
         lineHeight: 1.6,
-        letterSpacing: '0.125rem',
-        textAlign: 'justify',
       },
       fontSize: font,
     },
@@ -44,8 +42,13 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
           'body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb': {
             backgroundColor: dark ? '#555' : '#bbb'
           },
+          'main#page-wrap': {
+            padding: '0 5px 50px 5px'
+          },
           p: {
-            textIndent: mark ? '2.6rem' : '1.3rem'
+            textIndent: mark ? '2.6rem' : '1.3rem',
+            letterSpacing: '0.125rem',
+            textAlign: 'justify',
           },
           '#mdx-wrap': {
             h1: { counterReset: 'p' },

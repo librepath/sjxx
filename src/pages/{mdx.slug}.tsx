@@ -10,7 +10,7 @@ const MdxSlug = ({ data, location: { pathname: path } }: Props) => {
     set({
       path,
       isMap: path.slice(-4).includes('map'),
-      anchors: data.mdx.h2.map(h => h.value),
+      anchors: data.mdx.h2.map(h => h.value || ' '),
       file: data.mdx.parent.relativePath
     })
   }, [path])

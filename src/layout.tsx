@@ -17,16 +17,15 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
   return (
     <Stack
       id="layout-wrap"
-      px={1}
       textAlign="justify"
       justifyContent="space-between"
       minHeight="100vh"
     >
-
-      {children}
+      <main id='page-wrap'>
+        {children}
+      </main>
       <SideDrawer open={open} setOpen={setOpen} >
         <Stack direction='row' spacing={1} justifyContent='end' pr={2}>
-
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
           <DarkSwitch dark={dark} setDark={dark => set({ dark })} />
           <FontSizeSlider onZoomIn={() => set({ zoom: zoom + 1 })} onZoomOut={() => set({ zoom: zoom - 1 })} />
@@ -38,7 +37,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         {!isMap && <List>
           {anchors.map((anchor, id) => <ListItemButton key={id} onClick={() => navigate("#" + anchor, { replace: true })}>
             <ListItemText
-              primaryTypographyProps={{ sx: { letterSpacing: 0 } }}
+              // primaryTypographyProps={{ sx: { letterSpacing: 0 } }}
               onClick={() => setOpen(false)}
             >{anchor}</ListItemText>
           </ListItemButton>)}

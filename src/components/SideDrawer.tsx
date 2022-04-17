@@ -22,7 +22,7 @@ const SideDrawer = ({ open, setOpen, ...props }: StackProps & { open: boolean, s
         anchor='right' PaperProps={{ sx: { width: 290 } }}>
         <Stack height={1} justifyContent='space-between'>
           <div>
-            <Typography color='gray' fontSize={32} pt={3} px={1}>非洲静心</Typography>
+            <Typography component='h1' color='gray' fontSize={32} pt={3} px={1}>非 洲 静 心 读 书</Typography>
             <Stack spacing={2} {...props} />
           </div>
           <Button startIcon={<Close />} onClick={() => setOpen(false)}>Close</Button>

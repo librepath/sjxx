@@ -8,7 +8,7 @@ import Layout from "./src/layout";
 
 const coms = {
   Slugs,
-  h2: (props) => <h2 id={props.children.toString()} {...props} />,
+  h2: (props) => <h2 id={props.children?.toString()} {...props} />,
   a: (props) => <Link to={props.href || "javascript:void(0)"} {...props} />,
 };
 
