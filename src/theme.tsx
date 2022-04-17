@@ -42,7 +42,7 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
           'body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb': {
             backgroundColor: dark ? '#555' : '#bbb'
           },
-          'main#page-wrap': {
+          '#page-wrap': {
             padding: '0 5px 50px 5px'
           },
           p: {

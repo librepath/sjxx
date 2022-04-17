@@ -21,9 +21,9 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <main id='page-wrap'>
+      <div id='page-wrap'>
         {children}
-      </main>
+      </div>
       <SideDrawer open={open} setOpen={setOpen} >
         <Stack direction='row' spacing={1} justifyContent='end' pr={2}>
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />
