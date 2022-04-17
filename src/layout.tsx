@@ -1,5 +1,5 @@
 import { ArrowCircleLeft, ArrowCircleUp, NavigateBefore, NavigateBeforeOutlined } from '@mui/icons-material'
-import { IconButton, List, ListItemButton, ListItemText, Stack } from '@mui/material'
+import { Box, IconButton, List, ListItemButton, ListItemText, Stack } from '@mui/material'
 import { navigate } from 'gatsby'
 import React, { PropsWithChildren, useEffect, useState } from 'react'
 import Bread from './components/Bread'
@@ -21,9 +21,9 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <div id='page-wrap'>
+      <Box px={1}>
         {children}
-      </div>
+      </Box>
       <SideDrawer open={open} setOpen={setOpen} >
         <Stack direction='row' spacing={1} justifyContent='end' pr={2}>
           <MarkSwitch mark={mark} setMark={mark => set({ mark })} />

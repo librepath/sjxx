@@ -43,9 +43,6 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
           'body::-webkit-scrollbar-thumb, div::-webkit-scrollbar-thumb': {
             backgroundColor: dark ? '#555' : '#bbb'
           },
-          '#page-wrap': {
-            padding: '0 5px 50px 5px'
-          },
           p: {
             textIndent: mark ? '2.6rem' : '1.3rem',
             letterSpacing: '0.125rem',
