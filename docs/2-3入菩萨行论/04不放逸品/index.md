@@ -1,3 +1,3 @@
 # 第四品 不放逸
 
-<Slugs left='2-3/04/' />
+<SlugMenu left='2-3/04/' />

@@ -1,3 +1,3 @@
 # 第八品 静虑
 
-<Slugs left='2-3/08/' />
+<SlugMenu left='2-3/08/' />

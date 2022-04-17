@@ -1,4 +1,4 @@
 # 第五品 护正知
 
 
-<Slugs left='2-3/05/' />
+<SlugMenu left='2-3/05/' />

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "./Link";
 
 
-const SlugLinks = ({ left = "", right = "", depth = [NaN, 9] }) => {
+const Menu = ({ left = "", right = "", depth = [NaN, 9] }) => {
   const data: Data = useStaticQuery(query);
   const slugs = data.allMdx.edges.map(({ node }) => ({
     label: node.frontmatter.title || node.headings[0]?.value,
@@ -74,4 +74,4 @@ const query = graphql`
     }
   }
 `;
-export default SlugLinks;
+export default Menu;

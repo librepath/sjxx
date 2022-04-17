@@ -8,4 +8,4 @@
 
 ## 课程目录
 
-<Slugs left='1-1/4/' />
+<SlugMenu left='1-1/4/' />

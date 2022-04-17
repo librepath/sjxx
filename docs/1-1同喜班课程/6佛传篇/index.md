@@ -7,4 +7,4 @@
 
 ## 课程目录
 
-<Slugs left='1-1/6/' />
+<SlugMenu left='1-1/6/' />

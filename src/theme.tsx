@@ -27,6 +27,7 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
       },
       body1: {
         lineHeight: 1.6,
+        textAlign: 'justify',
       },
       fontSize: font,
     },
@@ -48,7 +49,6 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
           p: {
             textIndent: mark ? '2.6rem' : '1.3rem',
             letterSpacing: '0.125rem',
-            textAlign: 'justify',
           },
           '#mdx-wrap': {
             h1: { counterReset: 'p' },
