@@ -34,8 +34,12 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
     components: {
       MuiCssBaseline: {
         styleOverrides: {
+          // html: {
+          //   scrollBehavior: 'smooth',
+          // },
           body: {
             fontFamily: `'宋体-简', '宋体', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
+
           },
           'body::-webkit-scrollbar, div::-webkit-scrollbar': {
             width: '4px',

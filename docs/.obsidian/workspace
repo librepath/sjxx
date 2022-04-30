@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "353a6431d4e43e1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f49d87d79730ce2f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1-1同喜班课程/2信仰篇/07慈经的修习/text.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6d33cab990427d4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "83d19eb1b72f994f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e598a844860f0b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "26a97978ca337b71",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "db63fb08cfe6cce8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6945db8e7d14c721",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d089b00466955b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1-1同喜班课程/2信仰篇/07慈经的修习/text.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f49d87d79730ce2f",
+  "lastOpenFiles": [
+    "1-1同喜班课程/2信仰篇/07慈经的修习/text.md",
+    "1-1同喜班课程/2信仰篇/07慈经的修习/index.md",
+    "0-1读书会/03电子书/01随缘与进取/index.md",
+    "2-3入菩萨行论/05护正知品/18/text.md",
+    "0-1读书会/01英文版/01人生五大问题/text.md"
+  ]
+}

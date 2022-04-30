@@ -18,8 +18,8 @@ const IndexPage = () => {
   }, [])
   return (
     <div >
-      <title>总目录</title>
-      <h1>非洲静心读书·目录</h1>
+      <title>非洲静心读书·目录</title>
+      <h1>非洲静心读书</h1>
       <Menu />
     </div>
   );
