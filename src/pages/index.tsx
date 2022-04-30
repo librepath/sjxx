@@ -1,8 +1,10 @@
+import { PageProps } from "gatsby";
 import React, { useEffect } from "react";
 import Menu from "../components/Menu";
 import { useStore } from "../store";
 
-const IndexPage = () => {
+const IndexPage = (props:PageProps) => {
+
   const [, set] = useStore();
   useEffect(() => {
     set({

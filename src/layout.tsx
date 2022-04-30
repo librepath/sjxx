@@ -22,7 +22,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <Box px={1}>
+      <Box flexGrow={1} px={1}>
         {children}
       </Box>
       <Box position='fixed' right={20} bottom={100}>
@@ -55,9 +55,9 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         anchors={isMap ? [] : anchors}
       >
       </SpeedDial> */}
-      <Stack pt={6.5} pb={12.5} direction='row' mt='auto' mb={0}>
+      <Stack pt={6.5} pb={12.5} direction='row'>
         <GithubButton file={file} />
-        <IconButton onClick={() => console.log(navigate(-1))} sx={{ ml: 6 }}>
+        <IconButton onClick={() => navigate(-1)} sx={{ ml: 6 }}>
           <ArrowCircleLeft color='primary' sx={{ opacity: 0.6 }} />
         </IconButton>
         {!isMap && <IconButton onClick={() => { window["scrollTo"]({ top: 0, behavior: "smooth" }) }} sx={{ ml: 1 }}>
