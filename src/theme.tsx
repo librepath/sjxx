@@ -67,7 +67,8 @@ export const setTheme = (dark = true, mark = false, font = 18) => {
           '#map-wrap': {
             code: {
               color: clr.pri,
-              background: '#ccc2'
+              background: '#ccc2',
+              backgroundColor: '#ccc2'
             }
           },
           "#menu-wrap h3": {
