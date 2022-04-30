@@ -5,11 +5,13 @@ import React, { PropsWithChildren, useState } from 'react'
 import Bread from './components/Bread'
 import DarkSwitch from './components/DarkSwitch'
 import FontSizeSlider from './components/FontSizeSlider'
-import GithubButton from './components/GithubButton'
+import ButtonGithub from './components/ButtonGithub'
 import MarkSwitch from './components/MarkSwitch'
 import SideButton from './components/SideButton'
 import SideDrawer from './components/SideDrawer'
 import { useStore } from './store'
+import ButtonBack from './components/ButtonBack'
+import ButtonTop from './components/ButtonTop'
 
 const Layout = ({ children }: PropsWithChildren<{}>) => {
   const [open, setOpen] = useState(false)
@@ -22,10 +24,10 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <Box flexGrow={1} flexShrink={0} px={1}>
-        {children || <span>{' '}</span>}
+      <Box flexGrow={1} px={1}>
+        {children}
       </Box>
-      <Box position='fixed' right={20} bottom={100}>
+      <Box position='fixed' right={20} bottom={isMap ? 50 : 100}>
         <SideButton onClick={() => setOpen(true)} />
       </Box>
       <SideDrawer open={open} onClose={() => setOpen(false)} >
@@ -55,15 +57,10 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         anchors={isMap ? [] : anchors}
       >
       </SpeedDial> */}
-      <Stack pt={6.5} pb={12.5} direction='row' flexShrink={1}>
-        <GithubButton file={file} />
-        <IconButton onClick={() => navigate(-1)} sx={{ ml: 6 }}>
-          <ArrowCircleLeft color='primary' sx={{ opacity: 0.6 }} />
-        </IconButton>
-        {!isMap && <IconButton onClick={() => { window["scrollTo"]({ top: 0, behavior: "smooth" }) }} sx={{ ml: 1 }}>
-          <ArrowCircleUp color='secondary' sx={{ opacity: 0.6 }} />
-        </IconButton>
-        }
+      <Stack direction='row' sx={isMap ? { position: 'fixed', bottom: 50 } : { pt: 6.5, pb: 12.5 }} >
+        <ButtonGithub file={file} />
+        <ButtonBack sx={{ ml: 6 }} />
+        {!isMap && <ButtonTop sx={{ ml: 1 }} />}
       </Stack>
       <div />
     </Stack >
