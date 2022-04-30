@@ -20,9 +20,9 @@ const MdxSlug = ({ data, location: { pathname: path } }: Props) => {
   return (
     <div>
       <title>{frontmatter.title || h1.map((h) => h.value).join(" ") || ""}</title>
-      <div id="mdx-wrap">
-        {isMap ? <MindMap children={rawBody} /> : <MDXRenderer children={body} />}
-      </div>
+      {isMap ? 
+        <MindMap children={rawBody} /> : <div id="mdx-wrap"><MDXRenderer children={body} /></div>}
+
 
     </div>
   );
