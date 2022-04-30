@@ -22,8 +22,8 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
       justifyContent="space-between"
       minHeight="100vh"
     >
-      <Box flexGrow={1} px={1}>
-        {children}
+      <Box flexGrow={1} flexShrink={0} px={1}>
+        {children || <span>{' '}</span>}
       </Box>
       <Box position='fixed' right={20} bottom={100}>
         <SideButton onClick={() => setOpen(true)} />
@@ -55,7 +55,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         anchors={isMap ? [] : anchors}
       >
       </SpeedDial> */}
-      <Stack pt={6.5} pb={12.5} direction='row'>
+      <Stack pt={6.5} pb={12.5} direction='row' flexShrink={1}>
         <GithubButton file={file} />
         <IconButton onClick={() => navigate(-1)} sx={{ ml: 6 }}>
           <ArrowCircleLeft color='primary' sx={{ opacity: 0.6 }} />
