@@ -89,22 +89,31 @@ Today, I would like to talk about these issues from the perspective of the Buddh
 千百年來，人們始終沒有停止探討和追尋，但答案往往來自思維，來自猜測和推斷，來自有限的個人經驗，而不是對生命真相的體證。
 今天，我想從佛法的角度，談談對這些問題的認識。
 
-## CHAPTER ONE WHAT IS HAPPINESS ?
-
+## CHAPTER ONE WHAT IS HAPPINESS ? 壹 何為幸福
 As we live in the world, our primary concern is survival, that is, the basic needs for living such as food and clothing.
 This is a relatively simple requirement based on material conditions.
 Once our basic needs are met, we turn to seek happiness, which is something everyone cares about and is striving for.
-So, what is happi- ness? Is it material or spiritual? If happiness purely depends on matter, it can be quantified.
-We may set up a standard in- dex for it, such as a certain amount of money or types of con- ditions, and so on.
+So, what is happiness? Is it material or spiritual? If happiness purely depends on matter, it can be quantified.
+We may set up a standard index for it, such as a certain amount of money or types of conditions, and so on.
 However, how is it in reality?
 
+我們首先要解決的是生存問題，也就是基本溫飽。
+這是屬於物質層面的需求，相對比較單純。
+除此而外，我們還想進一步獲得幸福，這是所有人關注並孜孜以求的。
+那麼，幸福究竟是什麼?是由物質還是精神所決定?如果幸福僅僅取決於物質，那就應該可以量化，可以總結出一個幸福的達標指數，比如有多少錢，或有什麼條件，等等。
+可事實又是如何?
 When they are poor, most people tend to place their hopes for happiness on improving their material conditions, which is the impetus that drives them to accumulate wealth en- thusiastically.
 But once the original goal has been reached, except for some temporary satisfaction, the anticipated sense of happiness does not seem to take place as expected.
 Hence, happiness is not necessarily the result of improving material conditions.
+
+何爲幸福多數人在生活清貧時，往往會將希望寄託於物質改善，這也是人們熱衷於賺錢的動力所在。
+但在當初設定的目標一一實現時，除了給我們帶來一些暫時滿足，預想中的幸福似乎並沒有如期而至。
+可見，幸福未必是改善物質就能解決的。
+
 What is indeed happiness? In my opinion, happiness is just an unstable feeling.
 This unstable feeling has to do with material conditions to some extent, but it is more closely related to our state of mind as well as how we evaluate our own needs, which is the key to understanding happiness.
 If we do not have the right attitude towards life, or tirelessly chase after material possessions, happiness will forever be a mirage beyond reach.
-Therefore, happiness not only depends on the ful- fillment of material needs, but also lies within the heart.
+Therefore, happiness not only depends on the ful-fillment of material needs, but also lies within the heart.
 To understand happiness in human life, we first need to right- ly understand the relationship between suffering and joy.
 From a Buddhist perspective, life is suffering.
 Many of us may not really understand this and then conclude that Buddhism must be negative and pessimistic, as we feel our life is not entirely suffering, but half suffering half happiness, or partly sorrowful partly joyful.
@@ -133,28 +142,28 @@ In the past, when people were apart, it was difficult for them to hear from each
 As time went by, the longing increased.
 There is no doubt that the happiness of reuniting after a long separation was extremely strong then.
 We can find many such descriptions in ancient poems and verses.
-Nowadays, howev- er, if we miss someone, no matter how far he or she is, we can make a call right away, or meet each other through a webcam, or even go to see him or her by plane.
+Nowadays, however, if we miss someone, no matter how far he or she is, we can make a call right away, or meet each other through a webcam, or even go to see him or her by plane.
 Distance is no longer an insurmountable barrier, even oceans apart.
 Nevertheless, since it is easier to relieve, the suffering caused by longing will not be as intense as it was in old times anymore.
 Accordingly, the happiness arising from the reunion is lessened as well. Because we don’t understand the truth of life, we experience misery.
 But people often don’t see this, and think that chang- ing the world is an effective way to remove the afflictions.
 This biased view leads us to constantly improve our material conditions while invariably creating suffering for ourselves.
 To some extent, the speed by which we create problems is much faster than the progress we make to improve the world.
-Although people in modern society enjoy a high level of civ- ilization, they live a tiring life and experience more pressure than their ancestors.
+Although people in modern society enjoy a high level of civilization, they live a tiring life and experience more pressure than their ancestors.
 The reason for this is nothing but too many desires and afflictions.
 This is the root cause of life’s suffering.
 Only by eradicating harmful desires and afflictions from our heart can we finally remove the source of suffering and be liberated.
 Other religions generally place happiness in Heaven and external salvation.
-In reality, changing our environment is a pas- sive measure, just like “changing the broth without changing the medicine”.
-If the quality of life has not changed, the re- sulting happiness will only be short-lived.
+In reality, changing our environment is a passive measure, just like “changing the broth without changing the medicine”.
+If the quality of life has not changed, the resulting happiness will only be short-lived.
 Because confusion is still present, it will continue to generate troubles and create a ceaseless cycle of rebirth or Samsara.
 The Dharma teaches us that only when we experience and verify the truth of life can we turn our delusion into enlightenment and transcend suffering.
 Furthermore, Buddhism especially emphasizes self-reliance, which is the essential feature that distinguishes Buddhism from other religions.
 In other religions, external power is stressed and believers hold that people can be saved if they have absolute faith.
-In the practice of Buddhism, we mainly rely on ourselves although we sometimes seek bless- ings from Buddhas and Bodhisattvas.
+In the practice of Buddhism, we mainly rely on ourselves although we sometimes seek blessings from Buddhas and Bodhisattvas.
 
 Of course, it is not possible to solely rely on oneself.
-It is also necessary to have wisdom and methods to attain enlight- enment.
+It is also necessary to have wisdom and methods to attain enlightenment.
 That is to say, we need to rely on both self and the Dharma.
 Otherwise, we will be led astray by self-conceit.
 The Dharma mentioned here refers to the path of cultivation taught by the Buddha, simply put, the Three Practices1 and the Noble Eight-fold Path2.
@@ -225,20 +234,20 @@ More sadly, many of us not only toil in vain but also generate evil karma throug
 In the infinite universe, the earth rotates constantly at every moment.
 As the saying goes, even if a person sits still on the earth, he moves about 40,000 km a day.
 As inhabitants of the earth, have we ever thought about where we were from before birth and where we will go after death? Can we live with our mind at ease without finding the answer? Of course, many people haven’t thought about this question.
-Oth- ers might be too busy to think it over or have decided to side- step this unsolved riddle by various means.
+Others might be too busy to think it over or have decided to sidestep this unsolved riddle by various means.
 However, whether we think about it or not, it is a reality everyone eventually needs to face.
 Our life seems so short against the backdrop of a long history and our life seems so insignificant in the vast universe.
 If we look at the phenomenon of life from the angle of materialism, it’s hard for us to find its ultimate meaning — no matter how splendid our life is, or how much effort we have made, all will fall into ruin in the end and turn into dust.
 However, we don’t have to be pessimistic.
 The Dharma teaches us that beyond its limited aspect, life has infinite dimensions.
 Life is small yet infinite, short yet eternal, fragile yet strong.
-If we could per- ceive thoroughly the nature of our mind, we would know that every finite moment implies infinity.
+If we could perceive thoroughly the nature of our mind, we would know that every finite moment implies infinity.
 Only by realizing this, can we find the ultimate meaning of life.
 When discussing the matter of birth and death of sentient beings, we must touch the topic of samsara (the cycle of rebirth).
 In ordinary people’s eyes, life begins at the moment of birth.
 Yet, from the view of samsara, our current life is only an episode of a long span of lives, and represents only a relative starting point.
 Before this current life, there was an infinite past; after it, there is an endless future.
-Certainly, it is generally not easy for modern people to accept this view- point, but if we observe life phenomena thoroughly, we will discover that some phenomena that are hard to explain scien- tifically will be suddenly enlightening from the perspective of samsara.
+Certainly, it is generally not easy for modern people to accept this view- point, but if we observe life phenomena thoroughly, we will discover that some phenomena that are hard to explain scientifically will be suddenly enlightening from the perspective of samsara.
 For example, do we believe in a predestined relationship be- tween one person and another? During the span of our life, we meet lots of people.
 We feel familiar with some of them and seem to have affinities at first glance.
 For others, we still feel like strangers even though we meet every day.
@@ -247,7 +256,7 @@ Why does this happen? Many people may explain this by fate.
 But people seldom think over where such fate originates and why we may have different relationships with different people.
 If someone believes in samsara, he or she won’t be surprised at such relationships.
 The reason is that relationships between people don’t just begin in current life, but originated from many past lives, in which they have left many traces.
-In previ- ous lives, some were our relatives and friends, and some were our enemies.
+In previous lives, some were our relatives and friends, and some were our enemies.
 When we meet each other again in current life, these traces revive and compel us to continue our past stories of love or hatred.
 Let’s take another example.
 Each of us has distinctive talents or can easily excel in certain majors.
@@ -280,11 +289,12 @@ The same principle applies to the life quality of Buddhas and Bodhisattvas.
 The infinite wisdom and compassion they possess were developed and achieved gradually through their past lives.
 Where does our future lie? What is our destiny? The answer actually is in our mind and behavior at this very moment, in what we are thinking and doing now.
 The current state of life is the outcome of accumulation from past lives, and the future state of life is the result of accumulation in this current life.
-Hence, Buddhism emphasizes the efforts at the present mo- ment, which is the key point in connecting the past and future as well as the focus of our endeavors in changing our destiny.
+Hence, Buddhism emphasizes the efforts at the present moment, which is the key point in connecting the past and future as well as the focus of our endeavors in changing our destiny.
 If we don’t understand where we were from before birth, our life has no roots; if we don’t know where we will go after death, we will have no destination.
 A person who couldn’t find his roots and destination will surely lack a sense of security, which is a mentality commonly found in modern society.
+
 How to attain a sense of security then? Many people have tried to gain it through accumulating wealth or purchasing insurance.
-As a matter of fact, how fragile and vulnerable these guaran- tees are in a world filled with disasters and impermanence! Let our heart return to the present moment since the real secu- rity exists nowhere else but within our mind and behavior at this very instant.
+As a matter of fact, how fragile and vulnerable these guarantees are in a world filled with disasters and impermanence! Let our heart return to the present moment since the real security exists nowhere else but within our mind and behavior at this very instant.
 As long as we can seize the present, we can manage our future and life path.
 When we are able to grasp every present moment, what could make us worry or panic?
 
@@ -292,7 +302,7 @@ Do we have a destiny? If yes, who determines it? Other religions mostly believe 
 Buddhism, however, holds the view that our destiny is the law governing life development, in which we ourselves are the driving force.
 In other words, destiny embodies the cause and effect of life’s continuum and is the result of different thoughts and behaviors.
 Certain be- haviors will lead to a certain life path.
-Our behaviors encom- pass actions of body, speech and mind: body actions refer to what we do, speech actions are what we say, and mind actions are what we think.
+Our behaviors encompass actions of body, speech and mind: body actions refer to what we do, speech actions are what we say, and mind actions are what we think.
 
 Buddhism also believes that the causes and effects of what we do, say and think, permeate through the Three Periods of Time, that is, our past, present and future lives.
 However, it may be difficult for modern people to accept or resonate with this notion from the heart.
@@ -300,7 +310,7 @@ Therefore, what I mainly teach now is cause and effect from the perspective of o
 We could temporarily set aside the notion of the causality of the Three Periods of Time, but we cannot ignore the spiritual causality and instant causality.
 When we perform a good deed, or if the thought of being kind arises, the resulting blessings might not manifest immediately, but the inner peace and joy it brings to our heart can be felt right away.
 Whatever we do or think leaves traces in and thereby brings strength in our mind.
-It’s such strength that influences the course of our future life, because thoughts will form habits, gradually fix into a state of mind, and further shape our different characters and personal- ities.
+It’s such strength that influences the course of our future life, because thoughts will form habits, gradually fix into a state of mind, and further shape our different characters and personalities.
 Within our mind are a great many thoughts.
 Some of them are positive and some are negative.
 The only difference lies in their respective strength.
@@ -390,17 +400,8 @@ Without understanding the meaning of life, we chase after insignificant short-te
 We might lose motivation to live because we cannot find a justifiable reason to stay alive.
 Thus, to find real happiness, it is of great significance to discuss and resolve these eternal ques- tions about life.
 
-## 壹 何為幸福
 
-我們首先要解決的是生存問題，也就是基本溫飽。
-這是屬於物質層面的需求，相對比較單純。
-除此而外，我們還想進一步獲得
-幸福，這是所有人關注並孜孜以求的。
-那麼，幸福究竟是什麼?是由物質還是精神所決定?如果幸福僅僅取決於物質，那就應該可以量化，可以總結出一個幸福的達標指數，比如有多少錢，或有什麼條件，等等。
-可事實又是如何?
-何爲幸福多數人在生活清貧時，往往會將希望寄託於物質改善，這也是人們熱衷於賺錢的動力所在。
-但在當初設定的目標一一實現時，除了給我們帶來一些暫時滿足，預想中的幸福似乎並沒有如期而至。
-可見，幸福未必是改善物質就能解決的。
+
 
 那幸福究竟是什麼呢?我的定義是:幸福只是一種不穩定的感覺。
 這種不穩定的感覺，固然和物質條件有一定關係，但更重要的，是在於自身心態，在於我們對自身需求的定位，這才是問題的根本所在。
